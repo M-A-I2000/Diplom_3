@@ -32,7 +32,7 @@ class TestMainPage:
         constructor_page.open_constructor_page()
         constructor_page.click_ingredient()
 
-        assert constructor_page.is_details_window_visible
+        assert constructor_page.is_details_window_visible()
 
 
     @allure.title("Проверка закрытия всплывающего окна с деталями ингредиента по клику на крестик")

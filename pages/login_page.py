@@ -28,7 +28,7 @@ class LoginPage(BasePage):
 
     @allure.step("Залогиниваемся существующим пользователем")
     def login(self, email, password):
-        self.driver.get(LOGIN_URL)
+        self.open(LOGIN_URL)
         self.wait_for_page_fully_loaded()
         self.fill_authorization_form(email, password)
         self.wait_for_page_fully_loaded()
